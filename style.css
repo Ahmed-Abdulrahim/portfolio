@@ -486,14 +486,15 @@ header.scrolled {
 }
 
 .profile-image {
-    width: 400px;
-    height: 500px;
+    width: 400px;          /* خليه مربع علشان تطلع دايرة */
+    height: 400px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 50%;    /* أهم خطوة: تحويل الصورة إلى دائرة */
     box-shadow: var(--shadow-card);
     transition: var(--transition-smooth);
     border: 3px solid var(--glass-border);
 }
+
 
 .profile-image:hover {
     transform: scale(1.02);
@@ -577,12 +578,12 @@ header.scrolled {
     display: inline-block;
 }
 
+
 .about-img {
-    width: 100%;
-    max-width: 500px;
-    height: 600px;
+    width: 400px;          /* خليه مربع علشان تطلع دايرة */
+    height: 400px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 80%;    /* أهم خطوة: تحويل الصورة إلى دائرة */
     box-shadow: var(--shadow-card);
     border: 3px solid var(--glass-border);
     transition: var(--transition-smooth);
